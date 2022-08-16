@@ -7,26 +7,32 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/fluid.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/yuantouxiang.png">
+  <link rel="icon" href="/img/yuantouxiang.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   
   <meta name="theme-color" content="#2f4154">
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="主要内容来源：AcWing_Linux_基础课 常用命令介绍(y总总结)12345678910111213141516(1) ctrl c: 取消命令，并且换行(2) ctrl u: 清空本行命令(3) tab键：可以补全命令和文件名，如果补全不了快速按两下tab键，可以显示备选选项(4) ls: 列出当前目录下所有文件，蓝色的是文件夹，白色的是普通文件，绿色的是可执行文件(5) pwd: 显示当">
+    <meta name="description" content="主要内容来源：AcWing_Linux_基础课 常用命令介绍(y总总结)(1) ctrl c: 取消命令，并且换行 (2) ctrl u: 清空本行命令 (3) tab键：可以补全命令和文件名，如果补全不了快速按两下tab键，可以显示备选选项 (4) ls: 列出当前目录下所有文件，蓝色的是文件夹，白色的是普通文件，绿色的是可执行文件 (5) pwd: 显示当前路径 (6) cd XXX: 进入X">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux 常用命令">
 <meta property="og:url" content="http://example.com/2022/08/15/LIinux-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="主要内容来源：AcWing_Linux_基础课 常用命令介绍(y总总结)12345678910111213141516(1) ctrl c: 取消命令，并且换行(2) ctrl u: 清空本行命令(3) tab键：可以补全命令和文件名，如果补全不了快速按两下tab键，可以显示备选选项(4) ls: 列出当前目录下所有文件，蓝色的是文件夹，白色的是普通文件，绿色的是可执行文件(5) pwd: 显示当">
+<meta property="og:description" content="主要内容来源：AcWing_Linux_基础课 常用命令介绍(y总总结)(1) ctrl c: 取消命令，并且换行 (2) ctrl u: 清空本行命令 (3) tab键：可以补全命令和文件名，如果补全不了快速按两下tab键，可以显示备选选项 (4) ls: 列出当前目录下所有文件，蓝色的是文件夹，白色的是普通文件，绿色的是可执行文件 (5) pwd: 显示当前路径 (6) cd XXX: 进入X">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-08-15T14:38:13.757Z">
-<meta property="article:modified_time" content="2022-08-15T14:45:34.205Z">
+<meta property="og:image" content="http://example.com/img/article/Linux.jpg">
+<meta property="article:published_time" content="2022-08-15T13:00:00.000Z">
+<meta property="article:modified_time" content="2022-08-16T08:47:11.457Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="Linux">
+<meta property="article:tag" content="操作系统">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/img/article/Linux.jpg">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -70,7 +76,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.2","typing":{"enable":true,"typeSpeed":80,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.2","typing":{"enable":true,"typeSpeed":80,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -80,6 +86,21 @@
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
   
@@ -164,7 +185,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/about/">
                 <i class="iconfont icon-user-fill"></i>
-                关于
+                关于我
               </a>
             </li>
           
@@ -185,11 +206,39 @@
           
           
           
-            <li class="nav-item">
-              <a class="nav-link" target="_blank" rel="noopener" href="https://space.bilibili.com/692719719">
-                <i class="iconfont bilibili icon-bilibili"></i>
-                哔哩哔哩
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" target="_self" href="javascript:;" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-addrcard"></i>
+                联系我
               </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://github.com/Shmilysw">
+                    
+                    GitHub
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://www.acwing.com/user/myspace/index/120382/">
+                    
+                    AcWing
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://leetcode.cn/u/shmilysw/">
+                    
+                    Leetcode
+                  </a>
+                
+              </div>
             </li>
           
         
@@ -272,7 +321,7 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-08-15 22:38" pubdate>
+        <time datetime="2022-08-15 21:00" pubdate>
           2022年8月15日 晚上
         </time>
       </span>
@@ -284,7 +333,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.5k 字
+          1.4k 字
         
       </span>
     
@@ -295,7 +344,7 @@
         
         
         
-          13 分钟
+          12 分钟
         
       </span>
     
@@ -346,12 +395,69 @@
             <!-- SEO header -->
             <h1 style="display: none">Linux 常用命令</h1>
             
+              <p class="note note-info">
+                
+                  
+                    本文最后更新于：33 分钟前
+                  
+                
+              </p>
+            
             
               <div class="markdown-body">
                 
                 <h3 id="主要内容来源："><a href="#主要内容来源：" class="headerlink" title="主要内容来源："></a>主要内容来源：</h3><p><a target="_blank" rel="noopener" href="https://www.acwing.com/activity/content/punch_the_clock/57/">AcWing_Linux_基础课</a></p>
-<h4 id="常用命令介绍-y总总结"><a href="#常用命令介绍-y总总结" class="headerlink" title="常用命令介绍(y总总结)"></a>常用命令介绍(y总总结)</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs bash">(1) ctrl c: 取消命令，并且换行<br>(2) ctrl u: 清空本行命令<br>(3) tab键：可以补全命令和文件名，如果补全不了快速按两下tab键，可以显示备选选项<br>(4) <span class="hljs-built_in">ls</span>: 列出当前目录下所有文件，蓝色的是文件夹，白色的是普通文件，绿色的是可执行文件<br>(5) <span class="hljs-built_in">pwd</span>: 显示当前路径<br>(6) <span class="hljs-built_in">cd</span> XXX: 进入XXX目录下, <span class="hljs-built_in">cd</span> .. 返回上层目录<br>(7) <span class="hljs-built_in">cp</span> XXX YYY: 将XXX文件复制成YYY，XXX和YYY可以是一个路径，比如../dir_c/a.txt，表示上层目录下的dir_c文件夹下的文件a.txt<br>(8) <span class="hljs-built_in">mkdir</span> XXX: 创建目录XXX<br>(9) <span class="hljs-built_in">rm</span> XXX: 删除普通文件;  <span class="hljs-built_in">rm</span> XXX -r: 删除文件夹<br>(10) <span class="hljs-built_in">mv</span> XXX YYY: 将XXX文件移动到YYY，和<span class="hljs-built_in">cp</span>命令一样，XXX和YYY可以是一个路径；重命名也是用这个命令<br>(11) <span class="hljs-built_in">touch</span> XXX: 创建一个文件<br>(12) <span class="hljs-built_in">cat</span> XXX: 展示文件XXX中的内容<br>(13) 复制文本<br>    windows/Linux下：Ctrl + insert，Mac下：<span class="hljs-built_in">command</span> + c<br>(14) 粘贴文本<br>    windows/Linux下：Shift + insert，Mac下：<span class="hljs-built_in">command</span> + v<br></code></pre></td></tr></table></figure>
-<h4 id="自己总结"><a href="#自己总结" class="headerlink" title="自己总结"></a>自己总结</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><code class="hljs bash">Shmilysw<br>一：绝对路径 从根开始描述这个路径(有<span class="hljs-string">&quot;/&quot;</span>)<br>二：相对路径 从当前路径开始来描述你的这个路径(无<span class="hljs-string">&quot;/&quot;</span>)<br>区别：看开头是不是有 <span class="hljs-string">&quot;/&quot;</span><br>/：根目录<br>..：上一级目录<br>.：当前目录<br>~/：hmoe目录<br>ctrl+c：跳过当前行<br>ctrl+u：清空当前行<br><span class="hljs-built_in">history</span>：显示历史操作<br>tab：自动补全命令或路径（只有一种选项，多种选项再按一次tab会显示可以补全的命令）<br><span class="hljs-built_in">ls</span>：显示当前文件夹下的文件<br>    <span class="hljs-built_in">ls</span> -l：显示详细信息<br>    <span class="hljs-built_in">ls</span> -lh：人性化输出(将详细信息里面的大小换成多少K)<br>    <span class="hljs-built_in">ls</span> -a：显示所有文件（包括隐藏文件）  ls-A：不显示当前目录和上层目录（.和..）<br><span class="hljs-built_in">cd</span>：进入一个路径<br>    <span class="hljs-built_in">cd</span> ..：返回上一层目录<br>    <span class="hljs-built_in">cd</span> -：返回到上一次操作所留在的目录(上一次所待过的地方)<br><span class="hljs-built_in">cp</span> a/tmp.txt b：把a文件夹下的tmp.txt复制到b文件夹<br>    <span class="hljs-built_in">cp</span> a/tmp.txt b/tmp1.txt：把a文件夹下的tmp.txt复制到b文件夹并且重命名为tmp1.txt<br>    <span class="hljs-built_in">cp</span> a b -r：把文件夹a复制到文件夹b中<br><span class="hljs-built_in">mkdir</span> a（路径也可以）：创建一个文件夹a<br>    <span class="hljs-built_in">mkdir</span> a/b/c：创建一个文件目录a/b/c<br><span class="hljs-built_in">rm</span> 文件1 文件2 文件3 ……：删除文件<br>    <span class="hljs-built_in">rm</span> 文件1 -r：删除文件夹<br>    <span class="hljs-built_in">rm</span> 文件夹1/*：删除文件夹1下的所有文件但不删除文件夹1<br><span class="hljs-built_in">touch</span> a：创建一个文件a<br><span class="hljs-built_in">mv</span> a/tmp.txt b：把a文件夹下的tmp.txt文件移动到b<br>    <span class="hljs-built_in">mv</span> a/tmp.txt b/tmp2.txt：把a文件夹下的tmp.txt文件移动到b并且重命名为tmp2.txt<br><span class="hljs-built_in">cat</span> 文件1：显示文件1的内容<br>vim 文件名：进入文件<br><br>复制文本：windows/Linux下：Ctrl + insert，Mac下：<span class="hljs-built_in">command</span> + c<br>粘贴文本：windows/Linux下：Shift + insert，Mac下：<span class="hljs-built_in">command</span> + v<br></code></pre></td></tr></table></figure>
+<h4 id="常用命令介绍-y总总结"><a href="#常用命令介绍-y总总结" class="headerlink" title="常用命令介绍(y总总结)"></a>常用命令介绍(y总总结)</h4><div class="code-wrapper"><pre><code class="hljs bash">(1) ctrl c: 取消命令，并且换行
+(2) ctrl u: 清空本行命令
+(3) tab键：可以补全命令和文件名，如果补全不了快速按两下tab键，可以显示备选选项
+(4) <span class="hljs-built_in">ls</span>: 列出当前目录下所有文件，蓝色的是文件夹，白色的是普通文件，绿色的是可执行文件
+(5) <span class="hljs-built_in">pwd</span>: 显示当前路径
+(6) <span class="hljs-built_in">cd</span> XXX: 进入XXX目录下, <span class="hljs-built_in">cd</span> .. 返回上层目录
+(7) <span class="hljs-built_in">cp</span> XXX YYY: 将XXX文件复制成YYY，XXX和YYY可以是一个路径，比如../dir_c/a.txt，表示上层目录下的dir_c文件夹下的文件a.txt
+(8) <span class="hljs-built_in">mkdir</span> XXX: 创建目录XXX
+(9) <span class="hljs-built_in">rm</span> XXX: 删除普通文件;  <span class="hljs-built_in">rm</span> XXX -r: 删除文件夹
+(10) <span class="hljs-built_in">mv</span> XXX YYY: 将XXX文件移动到YYY，和<span class="hljs-built_in">cp</span>命令一样，XXX和YYY可以是一个路径；重命名也是用这个命令
+(11) <span class="hljs-built_in">touch</span> XXX: 创建一个文件
+(12) <span class="hljs-built_in">cat</span> XXX: 展示文件XXX中的内容
+(13) 复制文本
+    windows/Linux下：Ctrl + insert，Mac下：<span class="hljs-built_in">command</span> + c
+(14) 粘贴文本
+    windows/Linux下：Shift + insert，Mac下：<span class="hljs-built_in">command</span> + v</code></pre></div>
+<h4 id="自己总结"><a href="#自己总结" class="headerlink" title="自己总结"></a>自己总结</h4><div class="code-wrapper"><pre><code class="hljs bash">Shmilysw
+一：绝对路径 从根开始描述这个路径(有<span class="hljs-string">&quot;/&quot;</span>)
+二：相对路径 从当前路径开始来描述你的这个路径(无<span class="hljs-string">&quot;/&quot;</span>)
+区别：看开头是不是有 <span class="hljs-string">&quot;/&quot;</span>
+/：根目录
+..：上一级目录
+.：当前目录
+~/：hmoe目录
+ctrl+c：跳过当前行
+ctrl+u：清空当前行
+<span class="hljs-built_in">history</span>：显示历史操作
+tab：自动补全命令或路径（只有一种选项，多种选项再按一次tab会显示可以补全的命令）
+<span class="hljs-built_in">ls</span>：显示当前文件夹下的文件
+    <span class="hljs-built_in">ls</span> -l：显示详细信息
+    <span class="hljs-built_in">ls</span> -lh：人性化输出(将详细信息里面的大小换成多少K)
+    <span class="hljs-built_in">ls</span> -a：显示所有文件（包括隐藏文件）  ls-A：不显示当前目录和上层目录（.和..）
+<span class="hljs-built_in">cd</span>：进入一个路径
+    <span class="hljs-built_in">cd</span> ..：返回上一层目录
+    <span class="hljs-built_in">cd</span> -：返回到上一次操作所留在的目录(上一次所待过的地方)
+<span class="hljs-built_in">cp</span> a/tmp.txt b：把a文件夹下的tmp.txt复制到b文件夹
+    <span class="hljs-built_in">cp</span> a/tmp.txt b/tmp1.txt：把a文件夹下的tmp.txt复制到b文件夹并且重命名为tmp1.txt
+    <span class="hljs-built_in">cp</span> a b -r：把文件夹a复制到文件夹b中
+<span class="hljs-built_in">mkdir</span> a（路径也可以）：创建一个文件夹a
+    <span class="hljs-built_in">mkdir</span> a/b/c：创建一个文件目录a/b/c
+<span class="hljs-built_in">rm</span> 文件1 文件2 文件3 ……：删除文件
+    <span class="hljs-built_in">rm</span> 文件1 -r：删除文件夹
+    <span class="hljs-built_in">rm</span> 文件夹1/*：删除文件夹1下的所有文件但不删除文件夹1
+<span class="hljs-built_in">touch</span> a：创建一个文件a
+<span class="hljs-built_in">mv</span> a/tmp.txt b：把a文件夹下的tmp.txt文件移动到b
+    <span class="hljs-built_in">mv</span> a/tmp.txt b/tmp2.txt：把a文件夹下的tmp.txt文件移动到b并且重命名为tmp2.txt
+<span class="hljs-built_in">cat</span> 文件1：显示文件1的内容
+vim 文件名：进入文件
+
+复制文本：windows/Linux下：Ctrl + insert，Mac下：<span class="hljs-built_in">command</span> + c
+粘贴文本：windows/Linux下：Shift + insert，Mac下：<span class="hljs-built_in">command</span> + v</code></pre></div>
 <blockquote><p>作者：Shmilysw<br>链接：<a target="_blank" rel="noopener" href="https://www.acwing.com/activity/content/code/content/3858182/">https://www.acwing.com/activity/content/code/content/3858182/</a><br>来源：AcWing</p>
 </blockquote>
                 
@@ -361,52 +467,41 @@
             <div>
               <div class="post-metas my-3">
   
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" class="category-chain-item">操作系统</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/Linux/">#Linux</a>
+      
+        <a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">#操作系统</a>
+      
+    </div>
   
 </div>
 
 
               
-  
-
-  <div class="license-box my-3">
-    <div class="license-title">
-      <div>Linux 常用命令</div>
-      <div>http://example.com/2022/08/15/LIinux-常用命令/</div>
-    </div>
-    <div class="license-meta">
-      
-        <div class="license-meta-item">
-          <div>作者</div>
-          <div>John Doe</div>
-        </div>
-      
-      
-        <div class="license-meta-item license-meta-date">
-          <div>发布于</div>
-          <div>2022年8月15日</div>
-        </div>
-      
-      
-      <div class="license-meta-item">
-        <div>许可协议</div>
-        <div>
-          
-            
-            
-              <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
-              <span class="hint--top hint--rounded" aria-label="BY - 署名">
-                <i class="iconfont icon-by"></i>
-              </span>
-              </a>
-            
-          
-        </div>
-      </div>
-    </div>
-    <div class="license-icon iconfont"></div>
-  </div>
-
-
 
               
                 <div class="post-prevnext my-3">
@@ -770,6 +865,11 @@
   <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
 
+
+
+  
+<script src="/js/timeDate.js"></script>
+<script src="/js/love.js"></script>
 
 
 
