@@ -1,4 +1,4 @@
-//运行时间bynote.cn
+<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>//运行时间bynote.cn
 var now = new Date();
 function createtime() {
     var grt = new Date("8/15/2022 22:22:22");//在此处修改你的建站时间，格式：月/日/年 时:分:秒

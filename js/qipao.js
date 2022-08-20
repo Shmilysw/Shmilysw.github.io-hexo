@@ -1,4 +1,4 @@
-// 上升的气泡bynote.cn
+<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>// 上升的气泡bynote.cn
 function qipao() {
     $('#background').circleMagic({
         radius: 10,
