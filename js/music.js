@@ -15,7 +15,7 @@ const ap = new APlayer({
         {
             name: "Time To Love",
             artist: 'October',
-            url: '/wyy/Letting Go.m4a',
+            url: '/wyy/Time To Love.m4a',
             cover: 'http://p1.music.126.net/D_XnnAmEQ_H4_6CxZkrMag==/8909342719915548.jpg?param=130y130',
             // lrc: '/lrc/'
         },
