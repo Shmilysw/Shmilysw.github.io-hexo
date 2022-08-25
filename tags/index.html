@@ -165,7 +165,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/about/">
                 <i class="iconfont icon-user-fill"></i>
-                关于我
+                关于
               </a>
             </li>
           
@@ -186,11 +186,23 @@
           
           
           
+            <li class="nav-item">
+              <a class="nav-link" href="/music/">
+                <i class="iconfont icon-music"></i>
+                音乐
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" target="_self" href="javascript:;" role="button"
                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="iconfont icon-addrcard"></i>
-                联系我
+                联系
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 
@@ -375,13 +387,13 @@
 
   <footer>
     <div class="footer-inner">
-    
-        <div class="footer-content">
-             <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
-        </div>
-        
-            
-                <div class="statistics">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <div style="font-size: 0.85rem"> <span id="timeDate">载入天数...</span> <span id="times">载入时分秒...</span> <script src="/js/duration.js"></script> </div> 
+    </div>
+  
+  
+    <div class="statistics">
   
   
 
@@ -404,82 +416,11 @@
   
 </div>
 
-                    
-
-
-                        <center>
-                            <span id="sitetime"></span>
-                            <script language=javascript>
-                                function siteTime() {
-                                    window.setTimeout("siteTime()", 1000);
-                                    var seconds = 1000;
-                                    var minutes = seconds * 60;
-                                    var hours = minutes * 60;
-                                    var days = hours * 24;
-                                    var years = days * 365;
-                                    var today = new Date();
-                                    var todayYear = today.getFullYear();
-                                    var todayMonth = today.getMonth() + 1;
-                                    var todayDate = today.getDate();
-                                    var todayHour = today.getHours();
-                                    var todayMinute = today.getMinutes();
-                                    var todaySecond = today.getSeconds();
-                                    /*
-                                  Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
-                                  year - 作为date对象的年份，为4位年份值
-                                  month - 0-11之间的整数，做为date对象的月份
-                                  day - 1-31之间的整数，做为date对象的天数
-                                  hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
-                                  minutes - 0-59之间的整数，做为date对象的分钟数
-                                  seconds - 0-59之间的整数，做为date对象的秒数
-                                  microseconds - 0-999之间的整数，做为date对象的毫秒数
-                                 */
-                                    var t1 = Date.UTC(2022, 08, 15, 22, 00, 00); //北京时间2018-2-13 00:00:00
-                                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
-                                    var diff = t2 - t1;
-                                    var diffYears = Math.floor(diff / years);
-                                    var diffDays = Math.floor((diff / days) - diffYears * 365);
-                                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
-                                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes);
-                                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes * minutes) / seconds);
-                                    document.getElementById("sitetime").innerHTML = "本站已在夹缝中安全运行 " +/*diffYears+" 年 "+*/diffDays + " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
-                                }
-                                siteTime();
-
-                            </script>
-                        </center>
-
-                        
-                                    
-
-
-
-
-
+  
+  
+  
 </div>
 
-
-
-<!-- <center>
-    <span id="timeDate">站点运行天数</span>
-    <span id="times">运行的时分秒</span>
-    <script>
-        var now = new Date();
-        function createtime() {
-            var grt = new Date("8/15/2022 22:22:22");//在此处修改你的建站时间，格式：月/日/年 时:分:秒
-            now.setTime(now.getTime() + 250);
-            days = (now - grt) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
-            hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
-            if (String(hnum).length == 1) { hnum = "0" + hnum; } minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
-            mnum = Math.floor(minutes); if (String(mnum).length == 1) { mnum = "0" + mnum; }
-            seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
-            snum = Math.round(seconds); if (String(snum).length == 1) { snum = "0" + snum; }
-            document.getElementById("timeDate").innerHTML = "本站已在各种夹缝中安全运行 " + dnum + " 天 ";
-            document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
-        }
-        setInterval("createtime()", 250);
-    </script>
-</center> -->
   </footer>
 
   <!-- Scripts -->
@@ -496,12 +437,12 @@
   </script>
 
 
-    <script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
-        <script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
-            <script  src="/js/events.js" ></script>
-                <script  src="/js/plugins.js" ></script>
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
 
-                    
+
   <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
   <script>
     (function (window, document) {
@@ -519,30 +460,31 @@
 
 
 
-                        
-                            
-                                                <script  src="/js/img-lazyload.js" ></script>
-                                                    
-                                                        
 
-                                                            
-                                                                
-                                                                    <script  src="/js/local-search.js" ></script>
-                                                                        
-                                                                    <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
-                                                                        
-                                                                            
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
 
-                                                                                
-                                                                                    
+
+
+
+  <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+  
 <script src="//cdn.jsdelivr.net/gh/bynotes/texiao/source/js/caidai.js"></script>
 <script src="//cdn.jsdelivr.net/gh/bynotes/texiao/source/js/love.js"></script>
 
-                                                                                        
 
-                                                                                            <!-- 主题的启动项，将它保持在最底部 -->
-                                                                                            <!-- the boot of the theme, keep it at the bottom -->
-                                                                                            <script  src="/js/boot.js" ></script>
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
 
   
 
