@@ -78,22 +78,22 @@
   
   
   <entry>
-    <title></title>
+    <title>标题</title>
     <link href="/"/>
     <url>/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>/* 打字机效果渐变 -bynote.cn*//* #subtitle {    background: linear-gradient(-45deg, #ee7752, #ce3e75, #23a6d5, #23d5ab);    background-size: 400% 400%;    -webkit-animation: Gradient 10s ease infinite;    -moz-animation: Gradient 10s ease infinite;    animation: Gradient 10s ease infinite;    -o-user-select: none;    -ms-user-select: none;    -webkit-user-select: none;    -moz-user-select: none;    user-select: none;    -webkit-background-clip: text;    -webkit-text-fill-color: transparent;    border-top-left-radius: 10px;    border-top-right-radius: 10px;}#subtitle:before {    background-color: rgba(0, 0, 0, 0);} */]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="个人简介："><a href="#个人简介：" class="headerlink" title="个人简介："></a>个人简介：</h2><p>一名普通本科的大三科班生，还在努力中，励志向大佬看起，未来可期的小菜鸡。<br>同时这也是我第一个自己搭建并上线的项目，希望以后继续努力，我也会把自己经历和成长记录在我的博客中，继续加油！</p><h2 id="目前状态："><a href="#目前状态：" class="headerlink" title="目前状态："></a>目前状态：</h2><p>算法，算法没学会（继续坚持刷），项目，项目没有做（住在github，学习别人的好项目），英语，英语不会（说实话喜欢英语，但就是学不好，其实，我是想学的，看见英语，我只想说 你丫的 ** 个 ** 的 ** ，不会，寄 ~ ）。</p><h2 id="未来规划："><a href="#未来规划：" class="headerlink" title="未来规划："></a>未来规划：</h2><p>摆烂！</p><p>Linux(git + thrift + docker) -&gt; Web(JavaScript + vue3 | React) -&gt; <strong>Java(SpringBoot + MyBatis-Plus)</strong> | Django(nginx + WebSocket + Rest Framework and JWT)</p><p>搁着做梦呢？？？快去学呀 ~ 你丫的瞅啥呢？？？</p><center>    <b><font size='5px'>Always try to improve myself！</font></b></center>]]></content>
     
   </entry>
   
   
   
   <entry>
-    <title>标题</title>
+    <title></title>
     <link href="/"/>
     <url>/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="个人简介："><a href="#个人简介：" class="headerlink" title="个人简介："></a>个人简介：</h2><p>一名普通本科的大三科班生，还在努力中，励志向大佬看起，未来可期的小菜鸡。<br>同时这也是我第一个自己搭建并上线的项目，希望以后继续努力，我也会把自己经历和成长记录在我的博客中，继续加油！</p><h2 id="目前状态："><a href="#目前状态：" class="headerlink" title="目前状态："></a>目前状态：</h2><p>算法，算法没学会（继续坚持刷），项目，项目没有做（住在github，学习别人的好项目），英语，英语不会（说实话喜欢英语，但就是学不好，其实，我是想学的，看见英语，我只想说 你丫的 ** 个 ** 的 ** ，不会，寄 ~ ）。</p><h2 id="未来规划："><a href="#未来规划：" class="headerlink" title="未来规划："></a>未来规划：</h2><p>摆烂！</p><p>Linux(git + thrift + docker) -&gt; Web(JavaScript + vue3 | React) -&gt; <strong>Java(SpringBoot + MyBatis-Plus)</strong> | Django(nginx + WebSocket + Rest Framework and JWT)</p><p>搁着做梦呢？？？快去学呀 ~ 你丫的瞅啥呢？？？</p><center>    <b><font size='5px'>Always try to improve myself！</font></b></center>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>/* 打字机效果渐变 -bynote.cn*//* #subtitle {    background: linear-gradient(-45deg, #ee7752, #ce3e75, #23a6d5, #23d5ab);    background-size: 400% 400%;    -webkit-animation: Gradient 10s ease infinite;    -moz-animation: Gradient 10s ease infinite;    animation: Gradient 10s ease infinite;    -o-user-select: none;    -ms-user-select: none;    -webkit-user-select: none;    -moz-user-select: none;    user-select: none;    -webkit-background-clip: text;    -webkit-text-fill-color: transparent;    border-top-left-radius: 10px;    border-top-right-radius: 10px;}#subtitle:before {    background-color: rgba(0, 0, 0, 0);} */]]></content>
     
   </entry>
   
@@ -126,6 +126,17 @@
     <link href="/"/>
     <url>/</url>
     
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>//运行时间bynote.cnvar now = new Date();function createtime() {    var grt = new Date("8/15/2022 22:22:22");//在此处修改你的建站时间，格式：月/日/年 时:分:秒    now.setTime(now.getTime() + 250);    days = (now - grt) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);    hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);    if (String(hnum).length == 1) { hnum = "0" + hnum; } minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);    mnum = Math.floor(minutes); if (String(mnum).length == 1) { mnum = "0" + mnum; }    seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);    snum = Math.round(seconds); if (String(snum).length == 1) { snum = "0" + snum; }    document.getElementById("timeDate").innerHTML = "本站已各种夹缝中安全运行 " + dnum + " 天 ";    document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";}setInterval("createtime()", 250);]]></content>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title></title>
+    <link href="/"/>
+    <url>/</url>
+    
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>window.onload = function() {//定义点击出现文字类function ClickFrontShow() {//定义所需文字和颜色this.fron = ['高兴', '开心', '❤', '欢乐', '愉悦', '愉快', '快乐', '欢喜', '喜悦', '欢欣', '欢畅', '欢腾', '雀跃', '欢快'];this.colo = ['#FF69B4', '#ff6651', 'orange', '#FF00FF', '#00FF7F', '#00BFFF', '#BA55D3'];//获取body元素this.elBody = document.getElementsByTagName("body")[0];//初始化randomNumthis.randomNum = null;//初始化字体indethis.finde = 0;//初始化classNamethis.cls = 0;}//定义初始化ClickFrontShow.prototype.init = function(frontArray, colorArray) {//自定义颜色和字体this.fron = frontArray || this.fron;this.colo = colorArray || this.colo;this.listenMouse();}//创建文字 ClickFrontShow.prototype.createFront = function (classname) {var self = this;let ospan = document.createElement('span');//设置样式let cssText = "position:absolute; width: 40px; height: 20px; cursor: default; transform: translate(-50%,-50%); font-weight: bold; opacity: 1; z-index: 1000; transition: 1s;";//随机字体和颜色let randomFront = self.fron[self.finde];let randomColor = self.colo[Math.round(Math.random()*(self.colo.length-1))];//字体下标增1self.finde = (self.finde+1) % self.fron.length;//向body中添加元素self.elBody.appendChild(ospan);//绑定一个classnameospan.className = String(classname);//添加样式ospan.style.cssText = cssText + "-moz-user-select: none;-webkit-user-select: none;-ms-user-select: none;user-select: none;"ospan.style.color = randomColor;ospan.innerHTML = randomFront;}//监听鼠标点击ClickFrontShow.prototype.listenMouse = function() {var self = this;//鼠标点击事件document.onclick = function(e) {//避免classname值重复导致出现bugif(self.cls === 20){self.cls = 0;}else{self.cls += 1;}//创建文字self.createFront(self.cls);let el = document.getElementsByClassName(self.cls)[0];//鼠标点击位置el.style.left = e.clientX + 'px';el.style.top = e.clientY + 'px';//过时改变setTimeout(function() {el.style.opacity = 0;el.style.top = el.offsetTop - 100 + 'px';}, 100);//过时清除setTimeout(function() {self.elBody.removeChild(el);}, 2000);}}//实例化var frontShow = new ClickFrontShow();//用户可在此传递参数，默认第一个参数是字体数组；//第二个参数是颜色数组，必须是数组类型！frontShow.init(); }]]></content>
     
   </entry>
@@ -138,17 +149,6 @@
     <url>/</url>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><!-- <center>  <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=600 height=450 src="//music.163.com/outchain/player?type=0&id=974387610&auto=1&height=430"></iframe></center> --><h4 id="❤这里是音乐界面，分享我喜欢的音乐，如果你有所推荐的音乐，联系我添加-❤"><a href="#❤这里是音乐界面，分享我喜欢的音乐，如果你有所推荐的音乐，联系我添加-❤" class="headerlink" title="❤这里是音乐界面，分享我喜欢的音乐，如果你有所推荐的音乐，联系我添加 ~❤"></a>❤这里是音乐界面，分享我喜欢的音乐，如果你有所推荐的音乐，联系我添加 ~❤</h4><link rel="stylesheet" href="/dist/APlayer.min.css">  <div id="aplayer"></div>  <script type="text/javascript" src="/dist/APlayer.min.js"></script><script type="text/javascript" src="/js/music.js"></script>]]></content>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title></title>
-    <link href="/"/>
-    <url>/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>//运行时间bynote.cnvar now = new Date();function createtime() {    var grt = new Date("8/15/2022 22:22:22");//在此处修改你的建站时间，格式：月/日/年 时:分:秒    now.setTime(now.getTime() + 250);    days = (now - grt) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);    hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);    if (String(hnum).length == 1) { hnum = "0" + hnum; } minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);    mnum = Math.floor(minutes); if (String(mnum).length == 1) { mnum = "0" + mnum; }    seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);    snum = Math.round(seconds); if (String(snum).length == 1) { snum = "0" + snum; }    document.getElementById("timeDate").innerHTML = "本站已各种夹缝中安全运行 " + dnum + " 天 ";    document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";}setInterval("createtime()", 250);]]></content>
     
   </entry>
   
