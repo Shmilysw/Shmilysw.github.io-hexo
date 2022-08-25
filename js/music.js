@@ -15,7 +15,7 @@ const ap = new APlayer({
         {
             name: "Time To Love",
             artist: 'October',
-            url: 'https://m704.music.126.net/20220825015155/d67a74664af632081c07ec23626a0248/jdyyaac/005e/0258/025e/7451f5129a52d9b9c45d54a407d1370c.m4a?authSecret=00000182d0e48d0615150aaba612248b',
+            url: 'https://m704.music.126.net/20220825180421/1b17d5ebf2403c921005b774c71275de/jdyyaac/005e/0258/025e/7451f5129a52d9b9c45d54a407d1370c.m4a?',
             cover: 'http://p1.music.126.net/D_XnnAmEQ_H4_6CxZkrMag==/8909342719915548.jpg?param=130y130',
             // lrc: '/lrc/'
         },
@@ -29,7 +29,7 @@ const ap = new APlayer({
         {
             name: "I Want You to Know",
             artist: 'Zedd / Selena Gomez',
-            url: 'https://m704.music.126.net/20220825162007/c89fedf3f19c5a0ad510a0169a45d149/jdyyaac/000e/0e0c/035b/7db4be3d659f4e0fab36415c1d878b27.m4a?authSecret=00000182d3ff6abe17ff0aaba368b124',
+            url: 'https://m704.music.126.net/20220825180837/c1964fa1ac9d90419ffd9a530cce80bf/jdyyaac/000e/0e0c/035b/7db4be3d659f4e0fab36415c1d878b27.m4a?',
             cover: 'http://p1.music.126.net/ze_ggtReuHBLF2o-wUolFw==/109951163221161145.jpg?param=130y130',
             lrc: '/lrc/I Want You to Know - Zedd.lrc'
         },
