@@ -1,7 +1,15 @@
 const ap = new APlayer({
     container: document.getElementById('aplayer'),
     fixed: false,
-    autoplay: false, //自动播放
+    mini: false,
+    autoplay: false,//自动播放
+    theme: '#FADFA3',
+    loop: 'all',
+    order: 'random',
+    preload: 'auto',
+    volume: 0.7,
+    mutex: true,
+    listFolded: false,
     lrcType: 3,
     audio: [
         {
@@ -15,9 +23,9 @@ const ap = new APlayer({
         {
             name: "Time To Love",
             artist: 'October',
-            url: '/wyy/Time To Love.m4a',
+            url: '/wyy/Time To Love.mp3',
             cover: 'http://p1.music.126.net/D_XnnAmEQ_H4_6CxZkrMag==/8909342719915548.jpg?param=130y130',
-            // lrc: '/lrc/'
+            lrc: '/lrc/lrc_.lrc'
         },
         {
             name: "在你的身边",
@@ -40,8 +48,25 @@ const ap = new APlayer({
             cover: 'http://p2.music.126.net/dhBUyt2SSBMH0hBgSbCMvA==/109951165968756930.jpg?param=130y130',
             lrc: '/lrc/We.lrc'
         },
+        {
+            name: "Body",
+            artist: 'Loud Luxury / Brando',
+            url: '/wyy/Body.m4a',
+            cover: 'http://p2.music.126.net/wkO6wvEAaMCZFsIjeEjEOA==/109951163414238989.jpg?param=130y130',
+            lrc: '/lrc/Body.lrc'
+        },
+
     ]
 });
+
+        // 模板：
+        // {
+        //     name: "",
+        //     artist: '',
+        //     url: '',
+        //     cover: '',
+        //     lrc: '/lrc/.lrc'
+        // },
 
 
 // const colorThief = new ColorThief();
