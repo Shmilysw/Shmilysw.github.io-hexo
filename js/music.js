@@ -39,21 +39,21 @@ const ap = new APlayer({
             artist: 'Zedd / Selena Gomez',
             url: '/wyy/I Want You to Know.m4a',
             cover: 'http://p1.music.126.net/ze_ggtReuHBLF2o-wUolFw==/109951163221161145.jpg?param=130y130',
-            lrc: '/lrc/I Want You to Know - Zedd.lrc'
+            lrc: '/lrc/I Want You to Know - Zedd-.lrc'
         },
         {
             name: "We Can't Stop",
             artist: 'Miley Cyrus',
             url: '/wyy/We.m4a',
             cover: 'http://p2.music.126.net/dhBUyt2SSBMH0hBgSbCMvA==/109951165968756930.jpg?param=130y130',
-            lrc: '/lrc/We.lrc'
+            lrc: '/lrc/We-.lrc'
         },
         {
             name: "Body",
             artist: 'Loud Luxury / Brando',
             url: '/wyy/Body.m4a',
             cover: 'http://p2.music.126.net/wkO6wvEAaMCZFsIjeEjEOA==/109951163414238989.jpg?param=130y130',
-            lrc: '/lrc/Body.lrc'
+            lrc: '/lrc/Body-.lrc'
         },
 
     ]
