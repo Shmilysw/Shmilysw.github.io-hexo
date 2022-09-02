@@ -78,28 +78,6 @@
   
   
   <entry>
-    <title>标题</title>
-    <link href="/"/>
-    <url>/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="个人简介："><a href="#个人简介：" class="headerlink" title="个人简介："></a>个人简介：</h2><p>一名普通本科的大三科班生，还在努力中，励志向大佬看起，未来一片黑暗，长得不健康的小菜鸡。<br>同时这也是我第一个自己搭建并上线的项目，希望以后继续努力，我也会把自己经历和成长记录在我的博客中，继续加油！</p><h2 id="目前状态："><a href="#目前状态：" class="headerlink" title="目前状态："></a>目前状态：</h2><p>算法，算法没学会（继续坚持刷），项目，项目没有做（住在github，学习别人的好项目），英语，英语不会，（命中缺英语，看见英语，我只想说 你丫的 ** 个 ** 的 ** ，不会，寄 ~ ）。</p><h2 id="未来规划："><a href="#未来规划：" class="headerlink" title="未来规划："></a>未来规划：</h2><p>摆烂！（内心的话 ~ ~ ~）</p><p>Linux(git + thrift + docker) -&gt; Web(JavaScript + vue3 | React) -&gt; <strong>Java(SpringBoot + MyBatis-Plus)</strong> | Django(nginx + WebSocket + Rest Framework and JWT)</p><p>什么情况，到底行不行啊，搁着做梦呢？？？快去学呀 ~ 你丫的瞅啥呢？？？</p><center>    <b><font size='5px'>Always try to improve myself！</font></b></center>]]></content>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>game</title>
-    <link href="/"/>
-    <url>/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h4 id="这里是游戏界面，点击图片跳转到游戏页面哦！"><a href="#这里是游戏界面，点击图片跳转到游戏页面哦！" class="headerlink" title="这里是游戏界面，点击图片跳转到游戏页面哦！"></a>这里是游戏界面，点击图片跳转到游戏页面哦！</h4><p>游戏来源：感谢<a href="https://haiyong.site/moyu/">海拥</a>大佬支持</p><hr><a href="https://haiyong.site/moyu/mgdmx/"><h4>萌怪大冒险</h4>        <img height="250px" width="895px" src="https://img-blog.csdnimg.cn/823afbead8354232bbb4e5f92d12f442.png">            </img></a><hr><a href="https://wanghao221.github.io/shuiguorenzhe/"><h4>水果忍者</h4>        <img height="250px" width="895px" src="https://img-blog.csdnimg.cn/597e2faaf824460fb37994a599e62181.png">            </img></a><hr><a href="https://haiyong.site/moyu/SpaceHuggers/"><h4>第三人称设计游戏</h4>        <img height="250px" width="895px" src="https://img-blog.csdnimg.cn/b9accc6538e048688c6f28da31337587.png">            </img></a><hr><a href="https://haiyong.site/moyu/weixiandehuoche/"><h4>危险货车</h4>        <img height="250px" width="895px" src="https://img-blog.csdnimg.cn/1c07bc48bd25442fbc20a99773bc2e49.png">            </img></a><hr><a href="https://haiyong.site/moyu/wuziqi.html"><h4>浩洋五子棋1（人vs电脑）</h4>        <img height="250px" width="895px" src="https://img-blog.csdnimg.cn/df51977576604dd0bcac1f7ef2f5f9a0.png">            </img></a><a href="https://haiyong.site/moyu/wu.html"><h4>浩洋五子棋2（人vs人）</h4>        <img height="250px" width="895px" src="https://img-blog.csdnimg.cn/7a187bffed5a4430a90988e42045ff15.png">            </img></a><hr><a href="https://haiyong.site/moyu/hjkg/"><h4>黄金矿工</h4>        <img height="250px" width="895px" src="https://img-blog.csdnimg.cn/0619a432cd6549d18038e1fdba575143.png">            </img></a><hr><p>写在最后：希望每一个访客，都可以愉快，轻松的游戏，如果你有什么做的好的游戏，联系我添加QvQ</p>]]></content>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title></title>
     <link href="/"/>
     <url>/</url>
@@ -111,11 +89,33 @@
   
   
   <entry>
+    <title>标题</title>
+    <link href="/"/>
+    <url>/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="个人简介："><a href="#个人简介：" class="headerlink" title="个人简介："></a>个人简介：</h2><p>一名普通本科的大三科班生，还在努力中，励志向大佬看起，未来一片黑暗，长得不健康的小菜鸡。<br>同时这也是我第一个自己搭建并上线的项目，希望以后继续努力，我也会把自己经历和成长记录在我的博客中，继续加油！</p><h2 id="目前状态："><a href="#目前状态：" class="headerlink" title="目前状态："></a>目前状态：</h2><p>算法，算法没学会（继续坚持刷），项目，项目没有做（住在github，学习别人的好项目），英语，英语不会，（命中缺英语，看见英语，我只想说 你丫的 ** 个 ** 的 ** ，不会，寄 ~ ）。</p><h2 id="未来规划："><a href="#未来规划：" class="headerlink" title="未来规划："></a>未来规划：</h2><p>摆烂！（内心的话 ~ ~ ~）</p><p>Linux(git + thrift + docker) -&gt; Web(JavaScript + vue3 | React) -&gt; <strong>Java(SpringBoot + MyBatis-Plus)</strong> | Django(nginx + WebSocket + Rest Framework and JWT)</p><p>什么情况，到底行不行啊，搁着做梦呢？？？快去学呀 ~ 你丫的瞅啥呢？？？</p><center>    <b><font size='5px'>Always try to improve myself！</font></b></center>]]></content>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title></title>
     <link href="/"/>
     <url>/</url>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>(function (window, document, undefined) {    var hearts = [];    window.requestAnimationFrame = (function () {        return window.requestAnimationFrame ||            window.webkitRequestAnimationFrame ||            window.mozRequestAnimationFrame ||            window.oRequestAnimationFrame ||            window.msRequestAnimationFrame ||            function (callback) {                setTimeout(callback, 1000 / 60);            }    })();    init();    function init() {        css(            ".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: absolute;}.heart:after{top: -5px;}.heart:before{left: -5px;}"        );        attachEvent();        gameloop();    }    function gameloop() {        for (var i = 0; i < hearts.length; i++) {            if (hearts[i].alpha <= 0) {                document.body.removeChild(hearts[i].el);                hearts.splice(i, 1);                continue;            }            hearts[i].y--;            hearts[i].scale += 0.004;            hearts[i].alpha -= 0.013;            hearts[i].el.style.cssText = "left:" + hearts[i].x + "px;top:" + hearts[i].y + "px;opacity:" + hearts[i]                .alpha + ";transform:scale(" + hearts[i].scale + "," + hearts[i].scale +                ") rotate(45deg);background:" + hearts[i].color;        }        requestAnimationFrame(gameloop);    }    function attachEvent() {        var old = typeof window.onclick === "function" && window.onclick;        window.onclick = function (event) {            old && old();            createHeart(event);        }    }    function createHeart(event) {        var d = document.createElement("div");        d.className = "heart";        hearts.push({            el: d,            x: event.clientX - 5,            y: event.clientY - 5,            scale: 1,            alpha: 1,            color: randomColor()        });        document.body.appendChild(d);    }    function css(css) {        var style = document.createElement("style");        style.type = "text/css";        try {            style.appendChild(document.createTextNode(css));        } catch (ex) {            style.styleSheet.cssText = css;        }        document.getElementsByTagName('head')[0].appendChild(style);    }    function randomColor() {        return "rgb(" + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) +            ")";    }})(window, document);]]></content>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>game</title>
+    <link href="/"/>
+    <url>/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h4 id="这里是游戏界面，点击图片跳转到游戏页面哦！"><a href="#这里是游戏界面，点击图片跳转到游戏页面哦！" class="headerlink" title="这里是游戏界面，点击图片跳转到游戏页面哦！"></a>这里是游戏界面，点击图片跳转到游戏页面哦！</h4><p>游戏来源：感谢<a href="https://haiyong.site/moyu/">海拥</a>大佬支持</p><hr><a href="https://haiyong.site/moyu/mgdmx/"><h4>萌怪大冒险</h4>        <img height="250px" width="895px" src="https://img-blog.csdnimg.cn/823afbead8354232bbb4e5f92d12f442.png">            </img></a><hr><a href="https://wanghao221.github.io/shuiguorenzhe/"><h4>水果忍者</h4>        <img height="250px" width="895px" src="https://img-blog.csdnimg.cn/597e2faaf824460fb37994a599e62181.png">            </img></a><hr><a href="https://haiyong.site/moyu/SpaceHuggers/"><h4>第三人称射击游戏</h4>        <img height="250px" width="895px" src="https://img-blog.csdnimg.cn/b9accc6538e048688c6f28da31337587.png">            </img></a><hr><a href="https://haiyong.site/moyu/weixiandehuoche/"><h4>危险货车</h4>        <img height="250px" width="895px" src="https://img-blog.csdnimg.cn/1c07bc48bd25442fbc20a99773bc2e49.png">            </img></a><hr><a href="https://haiyong.site/moyu/wuziqi.html"><h4>浩洋五子棋1（人vs电脑）</h4>        <img height="250px" width="895px" src="https://img-blog.csdnimg.cn/df51977576604dd0bcac1f7ef2f5f9a0.png">            </img></a><a href="https://haiyong.site/moyu/wu.html"><h4>浩洋五子棋2（人vs人）</h4>        <img height="250px" width="895px" src="https://img-blog.csdnimg.cn/7a187bffed5a4430a90988e42045ff15.png">            </img></a><hr><a href="https://haiyong.site/moyu/hjkg/"><h4>黄金矿工</h4>        <img height="250px" width="895px" src="https://img-blog.csdnimg.cn/0619a432cd6549d18038e1fdba575143.png">            </img></a><hr><p>写在最后：希望每一个访客，都可以愉快，轻松的游戏，如果你有什么做的好的游戏，联系我添加QvQ</p>]]></content>
     
   </entry>
   
