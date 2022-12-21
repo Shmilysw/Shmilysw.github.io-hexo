@@ -18,13 +18,13 @@
   <meta name="author" content="shiwei">
   <meta name="keywords" content="">
   
-    <meta name="description" content="主要内容来源：AcWing_Linux_基础课 常用命令介绍(y总总结)(1) ctrl c: 取消命令，并且换行 (2) ctrl u: 清空本行命令 (3) tab键：可以补全命令和文件名，如果补全不了快速按两下tab键，可以显示备选选项 (4) ls: 列出当前目录下所有文件，蓝色的是文件夹，白色的是普通文件，绿色的是可执行文件 (5) pwd: 显示当前路径 (6) cd XXX: 进入X">
+    <meta name="description" content="git 的使用使用git bash连接到gitee 1、创建SSHkey打开Git Bash，输入ssh-keygen -t rsa会分别提示你文件名，密码（可不设置），确认密码。一般三次回车就可以在 C:\Users\“你的用户名”.ssh 目录下就会有.pub结尾的文件，用记事本打开，复制里面的东西，这就是你的SSH key  2、添加key到Giteegitee-&amp;gt;设置-&amp;gt;SSH">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>Linux 常用命令 - shiwei&#39;s blog</title>
+  <title>Hexo博客的使用总结 - shiwei&#39;s blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -336,7 +336,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Linux 常用命令"></span>
+            <span id="subtitle" data-typed-text="Hexo博客的使用总结"></span>
           
         </div>
 
@@ -347,8 +347,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-08-15 21:00" pubdate>
-          2022年8月15日 晚上
+        <time datetime="2022-12-21 11:14" pubdate>
+          2022年12月21日 上午
         </time>
       </span>
     
@@ -359,7 +359,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.4k 字
+          1.1k 字
         
       </span>
     
@@ -370,7 +370,7 @@
         
         
         
-          12 分钟
+          10 分钟
         
       </span>
     
@@ -416,12 +416,12 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Linux 常用命令</h1>
+            <h1 style="display: none">Hexo博客的使用总结</h1>
             
               <p class="note note-info">
                 
                   
-                    本文最后更新于：4 个月前
+                    本文最后更新于：1 小时前
                   
                 
               </p>
@@ -429,60 +429,71 @@
             
               <div class="markdown-body">
                 
-                <h3 id="主要内容来源："><a href="#主要内容来源：" class="headerlink" title="主要内容来源："></a>主要内容来源：</h3><p><a target="_blank" rel="noopener" href="https://www.acwing.com/activity/content/punch_the_clock/57/">AcWing_Linux_基础课</a></p>
-<h4 id="常用命令介绍-y总总结"><a href="#常用命令介绍-y总总结" class="headerlink" title="常用命令介绍(y总总结)"></a>常用命令介绍(y总总结)</h4><div class="code-wrapper"><pre><code class="hljs bash">(1) ctrl c: 取消命令，并且换行
-(2) ctrl u: 清空本行命令
-(3) tab键：可以补全命令和文件名，如果补全不了快速按两下tab键，可以显示备选选项
-(4) <span class="hljs-built_in">ls</span>: 列出当前目录下所有文件，蓝色的是文件夹，白色的是普通文件，绿色的是可执行文件
-(5) <span class="hljs-built_in">pwd</span>: 显示当前路径
-(6) <span class="hljs-built_in">cd</span> XXX: 进入XXX目录下, <span class="hljs-built_in">cd</span> .. 返回上层目录
-(7) <span class="hljs-built_in">cp</span> XXX YYY: 将XXX文件复制成YYY，XXX和YYY可以是一个路径，比如../dir_c/a.txt，表示上层目录下的dir_c文件夹下的文件a.txt
-(8) <span class="hljs-built_in">mkdir</span> XXX: 创建目录XXX
-(9) <span class="hljs-built_in">rm</span> XXX: 删除普通文件;  <span class="hljs-built_in">rm</span> XXX -r: 删除文件夹
-(10) <span class="hljs-built_in">mv</span> XXX YYY: 将XXX文件移动到YYY，和<span class="hljs-built_in">cp</span>命令一样，XXX和YYY可以是一个路径；重命名也是用这个命令
-(11) <span class="hljs-built_in">touch</span> XXX: 创建一个文件
-(12) <span class="hljs-built_in">cat</span> XXX: 展示文件XXX中的内容
-(13) 复制文本
-    windows/Linux下：Ctrl + insert，Mac下：<span class="hljs-built_in">command</span> + c
-(14) 粘贴文本
-    windows/Linux下：Shift + insert，Mac下：<span class="hljs-built_in">command</span> + v</code></pre></div>
-<h4 id="自己总结"><a href="#自己总结" class="headerlink" title="自己总结"></a>自己总结</h4><div class="code-wrapper"><pre><code class="hljs bash">Shmilysw
-一：绝对路径 从根开始描述这个路径(有<span class="hljs-string">&quot;/&quot;</span>)
-二：相对路径 从当前路径开始来描述你的这个路径(无<span class="hljs-string">&quot;/&quot;</span>)
-区别：看开头是不是有 <span class="hljs-string">&quot;/&quot;</span>
-/：根目录
-..：上一级目录
-.：当前目录
-~/：hmoe目录
-ctrl+c：跳过当前行
-ctrl+u：清空当前行
-<span class="hljs-built_in">history</span>：显示历史操作
-tab：自动补全命令或路径（只有一种选项，多种选项再按一次tab会显示可以补全的命令）
-<span class="hljs-built_in">ls</span>：显示当前文件夹下的文件
-    <span class="hljs-built_in">ls</span> -l：显示详细信息
-    <span class="hljs-built_in">ls</span> -lh：人性化输出(将详细信息里面的大小换成多少K)
-    <span class="hljs-built_in">ls</span> -a：显示所有文件（包括隐藏文件）  ls-A：不显示当前目录和上层目录（.和..）
-<span class="hljs-built_in">cd</span>：进入一个路径
-    <span class="hljs-built_in">cd</span> ..：返回上一层目录
-    <span class="hljs-built_in">cd</span> -：返回到上一次操作所留在的目录(上一次所待过的地方)
-<span class="hljs-built_in">cp</span> a/tmp.txt b：把a文件夹下的tmp.txt复制到b文件夹
-    <span class="hljs-built_in">cp</span> a/tmp.txt b/tmp1.txt：把a文件夹下的tmp.txt复制到b文件夹并且重命名为tmp1.txt
-    <span class="hljs-built_in">cp</span> a b -r：把文件夹a复制到文件夹b中
-<span class="hljs-built_in">mkdir</span> a（路径也可以）：创建一个文件夹a
-    <span class="hljs-built_in">mkdir</span> a/b/c：创建一个文件目录a/b/c
-<span class="hljs-built_in">rm</span> 文件1 文件2 文件3 ……：删除文件
-    <span class="hljs-built_in">rm</span> 文件1 -r：删除文件夹
-    <span class="hljs-built_in">rm</span> 文件夹1/*：删除文件夹1下的所有文件但不删除文件夹1
-<span class="hljs-built_in">touch</span> a：创建一个文件a
-<span class="hljs-built_in">mv</span> a/tmp.txt b：把a文件夹下的tmp.txt文件移动到b
-    <span class="hljs-built_in">mv</span> a/tmp.txt b/tmp2.txt：把a文件夹下的tmp.txt文件移动到b并且重命名为tmp2.txt
-<span class="hljs-built_in">cat</span> 文件1：显示文件1的内容
-vim 文件名：进入文件
+                <h1 id="git-的使用"><a href="#git-的使用" class="headerlink" title="git 的使用"></a>git 的使用</h1><h3 id="使用git-bash连接到gitee"><a href="#使用git-bash连接到gitee" class="headerlink" title="使用git bash连接到gitee"></a>使用git bash连接到gitee</h3><ul>
+<li><h4 id="1、创建SSHkey"><a href="#1、创建SSHkey" class="headerlink" title="1、创建SSHkey"></a>1、创建SSHkey</h4><p>打开Git Bash，输入ssh-keygen -t rsa<br>会分别提示你文件名，密码（可不设置），确认密码。一般三次回车就可以<br>在 C:\Users\“你的用户名”.ssh 目录下就会有.pub结尾的文件，用记事本打开，复制里面的东西，这就是你的SSH key</p>
+</li>
+<li><h4 id="2、添加key到Gitee"><a href="#2、添加key到Gitee" class="headerlink" title="2、添加key到Gitee"></a>2、添加key到Gitee</h4><p>gitee-&gt;设置-&gt;SSH公钥<br>把key粘贴进去，标题默认是本机的名字</p>
+</li>
+<li><h4 id="3、ssh链接"><a href="#3、ssh链接" class="headerlink" title="3、ssh链接"></a>3、ssh链接</h4><h5 id="我一般喜欢先建个仓库，然后本地再去连接那个仓库，hh"><a href="#我一般喜欢先建个仓库，然后本地再去连接那个仓库，hh" class="headerlink" title="我一般喜欢先建个仓库，然后本地再去连接那个仓库，hh ~"></a><strong>我一般喜欢先建个仓库，然后本地再去连接那个仓库，hh ~</strong></h5><div class="code-wrapper"><pre><code class="hljs llvm">git remote <span class="hljs-keyword">add</span> gitee git<span class="hljs-title">@gitee.com</span>:YourUserName/YourProjectName.git</code></pre></div>
+<p>YourUserName和YourProjectName都是要具体看你自己的实际用户名和仓库名字<br>即可，可以通过git remote -v查看</p>
+<div class="code-wrapper"><pre><code class="hljs ada">$ssh -T git@gitee.com
+Hi XXX! You<span class="hljs-symbol">&#x27;ve</span> successfully authenticated, but GITEE.COM does <span class="hljs-keyword">not</span> provide shell <span class="hljs-keyword">access</span>.
+</code></pre></div>
+<p>eg:</p>
+<div class="code-wrapper"><pre><code class="hljs ada">$ ssh -T git@gitee.com
+Hi Shmilysw! You<span class="hljs-symbol">&#x27;ve</span> successfully authenticated, but GITEE.COM does <span class="hljs-keyword">not</span> provide shell <span class="hljs-keyword">access</span>.</code></pre></div></li>
+</ul>
+<h5 id="其他都是些git的基本使用"><a href="#其他都是些git的基本使用" class="headerlink" title="其他都是些git的基本使用"></a><strong>其他都是些git的基本使用</strong></h5><div class="code-wrapper"><pre><code class="hljs awk">git status <span class="hljs-regexp">//</span> 查看工作台状态
+git add . <span class="hljs-regexp">//</span> 添加文件
+git commit -m <span class="hljs-string">&quot;备注&quot;</span> <span class="hljs-regexp">//</span> 提交修改，并备注
+git push <span class="hljs-regexp">//</span> 推送至远端仓库
+</code></pre></div>
 
-复制文本：windows/Linux下：Ctrl + insert，Mac下：<span class="hljs-built_in">command</span> + c
-粘贴文本：windows/Linux下：Shift + insert，Mac下：<span class="hljs-built_in">command</span> + v</code></pre></div>
-<blockquote><p>作者：Shmilysw<br>链接：<a target="_blank" rel="noopener" href="https://www.acwing.com/activity/content/code/content/3858182/">https://www.acwing.com/activity/content/code/content/3858182/</a><br>来源：AcWing</p>
-</blockquote>
+<h1 id="Hexo-命令"><a href="#Hexo-命令" class="headerlink" title="Hexo 命令"></a>Hexo 命令</h1><p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">Hexo文档</a></p>
+<ul>
+<li><h4 id="添加一张md页面"><a href="#添加一张md页面" class="headerlink" title="添加一张md页面"></a>添加一张md页面</h4></li>
+</ul>
+<div class="code-wrapper"><pre><code class="hljs gauss">$ hexo <span class="hljs-keyword">new</span> [layout] &lt;<span class="hljs-built_in">title</span>&gt;</code></pre></div>
+<p>新建一篇文章。如果没有设置 layout 的话，默认使用 _config.yml 中的 default_layout 参数代替。如果标题包含空格的话，请使用引号括起来。</p>
+<div class="code-wrapper"><pre><code class="hljs actionscript">$ hexo <span class="hljs-keyword">new</span> <span class="hljs-string">&quot;post title with whitespace&quot;</span></code></pre></div>
+
+<ul>
+<li><h4 id="本地查看效果"><a href="#本地查看效果" class="headerlink" title="本地查看效果"></a>本地查看效果</h4><div class="code-wrapper"><pre><code class="hljs crystal"><span class="hljs-variable">$ </span>hexo server
+或
+<span class="hljs-variable">$ </span>hexo s</code></pre></div></li>
+<li><h4 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h4><div class="code-wrapper"><pre><code class="hljs verilog">$ hexo <span class="hljs-keyword">generate</span>
+或
+$ hexo g</code></pre></div></li>
+<li><h4 id="部署网站"><a href="#部署网站" class="headerlink" title="部署网站"></a>部署网站</h4><div class="code-wrapper"><pre><code class="hljs crystal"><span class="hljs-variable">$ </span>hexo deploy
+或
+<span class="hljs-variable">$ </span>hexo d</code></pre></div></li>
+<li><h4 id="清除缓存文件"><a href="#清除缓存文件" class="headerlink" title="清除缓存文件"></a>清除缓存文件</h4><div class="code-wrapper"><pre><code class="hljs crystal"><span class="hljs-variable">$ </span>hexo clean
+或
+<span class="hljs-variable">$ </span>hexo c</code></pre></div>
+<p>清除缓存文件 (db.json) 和已生成的静态文件 (public)。<br>在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。</p>
+</li>
+</ul>
+<h3 id="具体部署步骤"><a href="#具体部署步骤" class="headerlink" title="具体部署步骤"></a>具体部署步骤</h3><ul>
+<li><p>git 进入项目文件下</p>
+<div class="code-wrapper"><pre><code class="hljs crystal"><span class="hljs-variable">$ </span>hexo c
+
+<span class="hljs-variable">$ </span>hexo g
+
+<span class="hljs-variable">$ </span>hexo d</code></pre></div></li>
+<li><p>打开gitee仓库</p>
+</li>
+<li><p>点击服务</p>
+</li>
+<li><p>点击Gitee Pages 服务</p>
+</li>
+<li><p>进行部署更新</p>
+</li>
+<li><p>等待更新 ~~~</p>
+</li>
+</ul>
+<h1 id="Fluid-主题"><a href="#Fluid-主题" class="headerlink" title="Fluid 主题"></a>Fluid 主题</h1><h5 id="主题可以根据自己的偏好自己设置"><a href="#主题可以根据自己的偏好自己设置" class="headerlink" title="主题可以根据自己的偏好自己设置"></a>主题可以根据自己的偏好自己设置</h5><p><a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/">Hexo Fluid 用户手册</a></p>
+<p><a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/guide/#%E5%85%B3%E4%BA%8E%E6%8C%87%E5%8D%97">Hexo Fluid 配置指南</a></p>
+
                 
               </div>
             
@@ -500,7 +511,7 @@ vim 文件名：进入文件
     
       <span class="category-chain">
         
-  <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" class="category-chain-item">操作系统</a>
+  <a href="/categories/%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%80%BB%E7%BB%93/" class="category-chain-item">博客的总结</a>
   
   
 
@@ -515,9 +526,11 @@ vim 文件名：进入文件
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/Linux/">#Linux</a>
+        <a href="/tags/%E5%AD%A6%E4%B9%A0/">#学习</a>
       
-        <a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">#操作系统</a>
+        <a href="/tags/hexo/">#hexo</a>
+      
+        <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">#博客搭建</a>
       
     </div>
   
@@ -531,18 +544,12 @@ vim 文件名：进入文件
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/08/15/LeetCode%202376.%20%E7%BB%9F%E8%AE%A1%E7%89%B9%E6%AE%8A%E6%95%B4%E6%95%B0/" title="LeetCode 2376. 统计特殊整数">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">LeetCode 2376. 统计特殊整数</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/08/15/hello-world/" title="Hello World">
-                        <span class="hidden-mobile">Hello World</span>
+                      <a href="/2022/10/18/JavaScript/" title="浅学JavaScript">
+                        <span class="hidden-mobile">浅学JavaScript</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
