@@ -18,13 +18,13 @@
   <meta name="author" content="shiwei">
   <meta name="keywords" content="">
   
-    <meta name="description" content="主要内容来源：AcWing_Linux_基础课 常用命令介绍(y总总结)(1) ctrl c: 取消命令，并且换行 (2) ctrl u: 清空本行命令 (3) tab键：可以补全命令和文件名，如果补全不了快速按两下tab键，可以显示备选选项 (4) ls: 列出当前目录下所有文件，蓝色的是文件夹，白色的是普通文件，绿色的是可执行文件 (5) pwd: 显示当前路径 (6) cd XXX: 进入X">
+    <meta name="description" content="git&amp;amp;github入门1. git介绍工作区：仓库的目录。工作区是独立于各个分支的。暂存区：数据暂时存放的区域，类似于工作区写入版本库前的缓存区。暂存区是独立于各个分支的。版本库：存放所有已经提交到本地仓库的代码版本版本结构：树结构(倒着的有向树)，树中每个节点代表一个代码版本,树中有head位置,表示你当前操作的位置。 工作区 ——&amp;gt; 暂存区(桥梁) ——&amp;gt;版本库 2. 演">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>Linux 常用命令 - shiwei&#39;s blog</title>
+  <title>git&amp;github的入门 - shiwei&#39;s blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -336,7 +336,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Linux 常用命令"></span>
+            <span id="subtitle" data-typed-text="git&amp;github的入门"></span>
           
         </div>
 
@@ -347,8 +347,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-08-15 21:00" pubdate>
-          2022年8月15日 晚上
+        <time datetime="2023-03-25 17:15" pubdate>
+          2023年3月25日 下午
         </time>
       </span>
     
@@ -359,7 +359,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.4k 字
+          1.6k 字
         
       </span>
     
@@ -370,7 +370,7 @@
         
         
         
-          12 分钟
+          14 分钟
         
       </span>
     
@@ -416,12 +416,12 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Linux 常用命令</h1>
+            <h1 style="display: none">git&amp;github的入门</h1>
             
               <p class="note note-info">
                 
                   
-                    本文最后更新于：7 个月前
+                    本文最后更新于：1 小时前
                   
                 
               </p>
@@ -429,60 +429,39 @@
             
               <div class="markdown-body">
                 
-                <h3 id="主要内容来源："><a href="#主要内容来源：" class="headerlink" title="主要内容来源："></a>主要内容来源：</h3><p><a target="_blank" rel="noopener" href="https://www.acwing.com/activity/content/punch_the_clock/57/">AcWing_Linux_基础课</a></p>
-<h4 id="常用命令介绍-y总总结"><a href="#常用命令介绍-y总总结" class="headerlink" title="常用命令介绍(y总总结)"></a>常用命令介绍(y总总结)</h4><div class="code-wrapper"><pre><code class="hljs bash">(1) ctrl c: 取消命令，并且换行
-(2) ctrl u: 清空本行命令
-(3) tab键：可以补全命令和文件名，如果补全不了快速按两下tab键，可以显示备选选项
-(4) <span class="hljs-built_in">ls</span>: 列出当前目录下所有文件，蓝色的是文件夹，白色的是普通文件，绿色的是可执行文件
-(5) <span class="hljs-built_in">pwd</span>: 显示当前路径
-(6) <span class="hljs-built_in">cd</span> XXX: 进入XXX目录下, <span class="hljs-built_in">cd</span> .. 返回上层目录
-(7) <span class="hljs-built_in">cp</span> XXX YYY: 将XXX文件复制成YYY，XXX和YYY可以是一个路径，比如../dir_c/a.txt，表示上层目录下的dir_c文件夹下的文件a.txt
-(8) <span class="hljs-built_in">mkdir</span> XXX: 创建目录XXX
-(9) <span class="hljs-built_in">rm</span> XXX: 删除普通文件;  <span class="hljs-built_in">rm</span> XXX -r: 删除文件夹
-(10) <span class="hljs-built_in">mv</span> XXX YYY: 将XXX文件移动到YYY，和<span class="hljs-built_in">cp</span>命令一样，XXX和YYY可以是一个路径；重命名也是用这个命令
-(11) <span class="hljs-built_in">touch</span> XXX: 创建一个文件
-(12) <span class="hljs-built_in">cat</span> XXX: 展示文件XXX中的内容
-(13) 复制文本
-    windows/Linux下：Ctrl + insert，Mac下：<span class="hljs-built_in">command</span> + c
-(14) 粘贴文本
-    windows/Linux下：Shift + insert，Mac下：<span class="hljs-built_in">command</span> + v</code></pre></div>
-<h4 id="自己总结"><a href="#自己总结" class="headerlink" title="自己总结"></a>自己总结</h4><div class="code-wrapper"><pre><code class="hljs bash">Shmilysw
-一：绝对路径 从根开始描述这个路径(有<span class="hljs-string">&quot;/&quot;</span>)
-二：相对路径 从当前路径开始来描述你的这个路径(无<span class="hljs-string">&quot;/&quot;</span>)
-区别：看开头是不是有 <span class="hljs-string">&quot;/&quot;</span>
-/：根目录
-..：上一级目录
-.：当前目录
-~/：hmoe目录
-ctrl+c：跳过当前行
-ctrl+u：清空当前行
-<span class="hljs-built_in">history</span>：显示历史操作
-tab：自动补全命令或路径（只有一种选项，多种选项再按一次tab会显示可以补全的命令）
-<span class="hljs-built_in">ls</span>：显示当前文件夹下的文件
-    <span class="hljs-built_in">ls</span> -l：显示详细信息
-    <span class="hljs-built_in">ls</span> -lh：人性化输出(将详细信息里面的大小换成多少K)
-    <span class="hljs-built_in">ls</span> -a：显示所有文件（包括隐藏文件）  ls-A：不显示当前目录和上层目录（.和..）
-<span class="hljs-built_in">cd</span>：进入一个路径
-    <span class="hljs-built_in">cd</span> ..：返回上一层目录
-    <span class="hljs-built_in">cd</span> -：返回到上一次操作所留在的目录(上一次所待过的地方)
-<span class="hljs-built_in">cp</span> a/tmp.txt b：把a文件夹下的tmp.txt复制到b文件夹
-    <span class="hljs-built_in">cp</span> a/tmp.txt b/tmp1.txt：把a文件夹下的tmp.txt复制到b文件夹并且重命名为tmp1.txt
-    <span class="hljs-built_in">cp</span> a b -r：把文件夹a复制到文件夹b中
-<span class="hljs-built_in">mkdir</span> a（路径也可以）：创建一个文件夹a
-    <span class="hljs-built_in">mkdir</span> a/b/c：创建一个文件目录a/b/c
-<span class="hljs-built_in">rm</span> 文件1 文件2 文件3 ……：删除文件
-    <span class="hljs-built_in">rm</span> 文件1 -r：删除文件夹
-    <span class="hljs-built_in">rm</span> 文件夹1/*：删除文件夹1下的所有文件但不删除文件夹1
-<span class="hljs-built_in">touch</span> a：创建一个文件a
-<span class="hljs-built_in">mv</span> a/tmp.txt b：把a文件夹下的tmp.txt文件移动到b
-    <span class="hljs-built_in">mv</span> a/tmp.txt b/tmp2.txt：把a文件夹下的tmp.txt文件移动到b并且重命名为tmp2.txt
-<span class="hljs-built_in">cat</span> 文件1：显示文件1的内容
-vim 文件名：进入文件
+                <h2 id="git-amp-github入门"><a href="#git-amp-github入门" class="headerlink" title="git&amp;github入门"></a>git&amp;github入门</h2><h4 id="1-git介绍"><a href="#1-git介绍" class="headerlink" title="1. git介绍"></a>1. git介绍</h4><p>工作区：仓库的目录。工作区是独立于各个分支的。<br>暂存区：数据暂时存放的区域，类似于工作区写入版本库前的缓存区。暂存区是独立于各个分支的。<br>版本库：存放所有已经提交到本地仓库的代码版本<br>版本结构：树结构(倒着的有向树)，树中每个节点代表一个代码版本,树中有head位置,表示你当前操作的位置。</p>
+<p>工作区 ——&gt; 暂存区(桥梁) ——&gt;版本库</p>
+<h4 id="2-演示ssh连接github"><a href="#2-演示ssh连接github" class="headerlink" title="2. 演示ssh连接github"></a>2. 演示ssh连接github</h4><p>  （1）创建SSHkey<br>            打开Git Bash，输入<code>ssh-keygen -t rsa</code><br>            会分别提示你文件名，密码（可不设置），确认密码。一般三次回车就可以<br>            在 C:\Users\“你的用户名”.ssh 目录下就会有.pub结尾的文件，用记事本打开，复制里面的东西，这就是你的SSH key<br>  （2）添加key到github<br>            github-&gt;设置-&gt;SSH公钥<br>            把key粘贴进去，标题默认是本机的名字</p>
+<p>  （3）验证是否连接成功</p>
+  <div class="code-wrapper"><pre><code class="hljs vbnet">ssh -T git@github.com
+Hi Shmilysw! You<span class="hljs-comment">&#x27;ve successfully authenticated, but GitHub does not provide shell access. // 说明成功了</span></code></pre></div>
+<h4 id="3-演示git的基本操作（创建项目，提交上传项目，拉取项目，添加删除用户分支，等）"><a href="#3-演示git的基本操作（创建项目，提交上传项目，拉取项目，添加删除用户分支，等）" class="headerlink" title="3. 演示git的基本操作（创建项目，提交上传项目，拉取项目，添加删除用户分支，等）"></a>3. 演示git的基本操作（创建项目，提交上传项目，拉取项目，添加删除用户分支，等）</h4><p>  （1）添加用户名和邮箱<br>  <div class="code-wrapper"><pre><code class="hljs stylus">  git config <span class="hljs-attr">--global</span> user<span class="hljs-selector-class">.name</span> shiwei
+  git config <span class="hljs-attr">--global</span> user<span class="hljs-selector-class">.email</span> <span class="hljs-number">1828045443</span>@qq<span class="hljs-selector-class">.com</span>
+  
+  <span class="hljs-comment">// 查看：</span>
+ cat <span class="hljs-selector-class">.gitconfig</span>
+<span class="hljs-selector-attr">[user]</span>
+        name = shiwei
+        email = <span class="hljs-number">1828045443</span>@qq.com</code></pre></div><br>  （2）创建空的项目（初始化仓库，将本地仓库和github仓库关联，将分支也关联）<br>  <div class="code-wrapper"><pre><code class="hljs crmsh">git init
+git remote add origin git@github.com:Shmilysw/Learning.git // ssh
+git pull --rebase origin <span class="hljs-keyword">master</span> <span class="hljs-title">// 即可跟刚创建的线上远程仓库的默认分支master</span>关联
+git push -u origin <span class="hljs-keyword">master</span> <span class="hljs-title">// 推送到github</span>仓库</code></pre></div><br>  （3）添加文件到仓库，并查看仓库状态，将修改的文件添加到暂存区内，提交版本<br>  <div class="code-wrapper"><pre><code class="hljs awk">vim readme.txt
+git status    <span class="hljs-regexp">//</span> 查看仓库状态 
+git add 文件名 <span class="hljs-regexp">//</span> git add . （全部加到暂存区）
+git commit -m <span class="hljs-string">&quot;add readme.txt&quot;</span></code></pre></div><br>  （4）在暂存区里删除内容（将文件从暂存区里拿出来，但是还是具有管理权），并对比仓库里的内容<br>  <div class="code-wrapper"><pre><code class="hljs stylus">git restore <span class="hljs-attr">--stage</span> readme<span class="hljs-selector-class">.txt</span>
+git diff readme.txt</code></pre></div><br>  （5）查看当前当前节点之前的路径，版本的回退<br>  <div class="code-wrapper"><pre><code class="hljs pgsql">git <span class="hljs-keyword">log</span> 
+git <span class="hljs-keyword">reset</span> <span class="hljs-comment">--hard 版本名前五个字符</span></code></pre></div><br>  （6）创建分支（协同开发），切换分支，查看分支，合并分支，删除分支<br>  <div class="code-wrapper"><pre><code class="hljs awk">git checkout -b branch_name <span class="hljs-regexp">//</span> 创建并切换到branch_name(dev)这个分支
+git branch                  <span class="hljs-regexp">//</span> 查看所有分支和当前所处分支
+git checkout branch_name    <span class="hljs-regexp">//</span> 切换到branch_name这个分支
+git merge branch_name       <span class="hljs-regexp">//</span> 将分支branch_name合并到当前分支上
+git branch -d branch_name   <span class="hljs-regexp">//</span> 删除本地仓库的branch_name分支</code></pre></div><br>（7）将当前分支推送到远程仓库</p>
+<div class="code-wrapper"><pre><code class="hljs gams">git push --<span class="hljs-keyword">set</span>-upstream <span class="hljs-comment">origin master</span> // 第一次<span class="hljs-comment">push</span>的时候
+git <span class="hljs-comment">push -u</span> // <span class="hljs-comment">(</span>第一次需要<span class="hljs-comment">-u</span>以后不需要<span class="hljs-comment">)</span>：将当前分支推送到远程仓库</code></pre></div>
 
-复制文本：windows/Linux下：Ctrl + insert，Mac下：<span class="hljs-built_in">command</span> + c
-粘贴文本：windows/Linux下：Shift + insert，Mac下：<span class="hljs-built_in">command</span> + v</code></pre></div>
-<blockquote><p>作者：Shmilysw<br>链接：<a target="_blank" rel="noopener" href="https://www.acwing.com/activity/content/code/content/3858182/">https://www.acwing.com/activity/content/code/content/3858182/</a><br>来源：AcWing</p>
-</blockquote>
+<p>（7）拉去项目到本地</p>
+<div class="code-wrapper"><pre><code class="hljs crmsh">git <span class="hljs-keyword">clone</span> <span class="hljs-title">git</span>@github.com:Shmilysw/Learning.git // ssh</code></pre></div>
+
+<h4 id="4-github的基本介绍"><a href="#4-github的基本介绍" class="headerlink" title="4. github的基本介绍"></a>4. github的基本介绍</h4>  <div class="code-wrapper"><pre><code class="hljs">代码托管平台</code></pre></div>
                 
               </div>
             
@@ -500,7 +479,7 @@ vim 文件名：进入文件
     
       <span class="category-chain">
         
-  <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" class="category-chain-item">操作系统</a>
+  <a href="/categories/git-github/" class="category-chain-item">git&amp;github</a>
   
   
 
@@ -515,9 +494,11 @@ vim 文件名：进入文件
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/Linux/">#Linux</a>
+        <a href="/tags/%E5%AD%A6%E4%B9%A0/">#学习</a>
       
-        <a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">#操作系统</a>
+        <a href="/tags/git/">#git</a>
+      
+        <a href="/tags/github/">#github</a>
       
     </div>
   
@@ -531,18 +512,12 @@ vim 文件名：进入文件
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/08/15/LeetCode%202376.%20%E7%BB%9F%E8%AE%A1%E7%89%B9%E6%AE%8A%E6%95%B4%E6%95%B0/" title="LeetCode 2376. 统计特殊整数">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">LeetCode 2376. 统计特殊整数</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/08/15/hello-world/" title="Hello World">
-                        <span class="hidden-mobile">Hello World</span>
+                      <a href="/2022/12/21/hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%80%BB%E7%BB%93/" title="Hexo博客的使用总结">
+                        <span class="hidden-mobile">Hexo博客的使用总结</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
